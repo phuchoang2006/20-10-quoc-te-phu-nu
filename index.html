@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💐 Tri Ân Ngày Phụ Nữ Việt Nam 20/10 💐</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Pacifico&family=Dancing+Script:wght@400;500;600;700&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ==================== RESET & BASE ==================== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --pink-light: #ffe4f0; --pink: #ff85a2; --pink-deep: #e84393; --pink-dark: #c44569;
+            --purple-light: #e8d5f5; --purple: #a855f7; --purple-deep: #7c3aed; --purple-dark: #6b21a8;
+            --white: #ffffff; --white-soft: #fdf2f8; --text-dark: #4a1942; --text-light: #ffffff;
+            --gold: #f0c27f; --gold-light: #fceabb;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Quicksand', 'Nunito', sans-serif;
+            background: var(--white-soft);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* ==================== FLOATING TEDDY BEARS ==================== */
+        .bears-container {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 0; overflow: hidden;
+        }
+        .bear {
+            position: absolute; font-size: 2rem; opacity: 0.12;
+            animation: floatBear 20s infinite ease-in-out;
+        }
+        .bear:nth-child(1){top:5%;left:3%;animation-delay:0s;font-size:2.5rem}
+        .bear:nth-child(2){top:15%;left:90%;animation-delay:2s;font-size:1.8rem}
+        .bear:nth-child(3){top:30%;left:8%;animation-delay:4s;font-size:3rem}
+        .bear:nth-child(4){top:45%;left:85%;animation-delay:1s;font-size:2.2rem}
+        .bear:nth-child(5){top:55%;left:15%;animation-delay:3s;font-size:2rem}
+        .bear:nth-child(6){top:70%;left:92%;animation-delay:5s;font-size:2.8rem}
+        .bear:nth-child(7){top:80%;left:5%;animation-delay:2.5s;font-size:1.5rem}
+        .bear:nth-child(8){top:20%;left:50%;animation-delay:6s;font-size:2rem}
+        .bear:nth-child(9){top:60%;left:45%;animation-delay:1.5s;font-size:2.5rem}
+        .bear:nth-child(10){top:90%;left:70%;animation-delay:3.5s;font-size:1.8rem}
+        .bear:nth-child(11){top:10%;left:70%;animation-delay:4.5s;font-size:2.3rem}
+        .bear:nth-child(12){top:40%;left:30%;animation-delay:7s;font-size:1.6rem}
+        .bear:nth-child(13){top:75%;left:55%;animation-delay:0.5s;font-size:2.7rem}
+        .bear:nth-child(14){top:35%;left:65%;animation-delay:5.5s;font-size:2.1rem}
+        .bear:nth-child(15){top:85%;left:35%;animation-delay:8s;font-size:1.9rem}
+        .bear:nth-child(16){top:50%;left:75%;animation-delay:2.8s;font-size:2.4rem}
+        @keyframes floatBear {
+            0%,100%{transform:translateY(0) rotate(0deg)}
+            25%{transform:translateY(-20px) rotate(5deg)}
+            50%{transform:translateY(-10px) rotate(-3deg)}
+            75%{transform:translateY(-25px) rotate(3deg)}
+        }
+
+        /* ==================== FALLING PETALS ==================== */
+        .petals-container {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 1; overflow: hidden;
+        }
+        .petal {
+            position: absolute; top: -50px; opacity: 0.6; font-size: 1.2rem;
+            animation: fallPetal linear infinite;
+        }
+        .petal:nth-child(1){left:5%;animation-duration:12s;animation-delay:0s}
+        .petal:nth-child(2){left:15%;animation-duration:15s;animation-delay:2s;font-size:1rem}
+        .petal:nth-child(3){left:25%;animation-duration:10s;animation-delay:4s}
+        .petal:nth-child(4){left:35%;animation-duration:18s;animation-delay:1s;font-size:.8rem}
+        .petal:nth-child(5){left:45%;animation-duration:13s;animation-delay:3s}
+        .petal:nth-child(6){left:55%;animation-duration:16s;animation-delay:5s;font-size:1.4rem}
+        .petal:nth-child(7){left:65%;animation-duration:11s;animation-delay:2.5s}
+        .petal:nth-child(8){left:75%;animation-duration:14s;animation-delay:.5s;font-size:1rem}
+        .petal:nth-child(9){left:85%;animation-duration:17s;animation-delay:3.5s}
+        .petal:nth-child(10){left:95%;animation-duration:12s;animation-delay:6s;font-size:1.3rem}
+        .petal:nth-child(11){left:10%;animation-duration:19s;animation-delay:7s}
+        .petal:nth-child(12){left:50%;animation-duration:14s;animation-delay:1.5s;font-size:.9rem}
+        @keyframes fallPetal {
+            0%{top:-50px;transform:translateX(0) rotate(0deg);opacity:.7}
+            25%{transform:translateX(30px) rotate(90deg)}
+            50%{transform:translateX(-20px) rotate(180deg);opacity:.5}
+            75%{transform:translateX(40px) rotate(270deg)}
+            100%{top:105vh;transform:translateX(-10px) rotate(360deg);opacity:0}
+        }
+
+        /* ==================== SPARKLE ON CLICK ==================== */
+        .sparkle {
+            position: fixed; pointer-events: none; z-index: 9999; font-size: 1rem;
+            animation: sparkleAnim 1s forwards;
+        }
+        @keyframes sparkleAnim {
+            0%{transform:scale(1) translateY(0);opacity:1}
+            100%{transform:scale(0) translateY(-40px);opacity:0}
+        }
+
+        /* ==================== HEART TRANSITION OVERLAY ==================== */
+        .heart-overlay {
+            position: fixed; inset: 0; z-index: 20000;
+            background: linear-gradient(135deg, rgba(232,67,147,0.95), rgba(168,85,247,0.95));
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+        .heart-overlay.active {
+            opacity: 1; pointer-events: all;
+        }
+        .heart-overlay .giant-heart {
+            font-size: 0; animation: none; position: relative;
+        }
+        .heart-overlay.active .giant-heart {
+            animation: heartBoom 2.2s ease-out forwards;
+        }
+        @keyframes heartBoom {
+            0%  {font-size:0; opacity:0; transform:scale(0) rotate(-15deg);}
+            20% {font-size:12rem; opacity:1; transform:scale(1.15) rotate(5deg);}
+            40% {font-size:11rem; transform:scale(0.95) rotate(-3deg);}
+            55% {font-size:14rem; transform:scale(1.05) rotate(2deg);}
+            70% {font-size:13rem; transform:scale(1) rotate(0deg);}
+            85% {font-size:14rem; opacity:1;}
+            100%{font-size:16rem; opacity:0; transform:scale(1.3) rotate(0deg);}
+        }
+
+        .heart-overlay .heart-name {
+            font-family: 'Pacifico', cursive; font-size: 2rem; color: white;
+            text-shadow: 2px 3px 8px rgba(0,0,0,0.2);
+            opacity: 0; margin-top: 1rem;
+        }
+        .heart-overlay.active .heart-name {
+            animation: heartNameIn 1s ease-out 0.5s forwards;
+        }
+        @keyframes heartNameIn {
+            0%{opacity:0;transform:translateY(20px)}
+            60%{opacity:1;transform:translateY(-5px)}
+            100%{opacity:1;transform:translateY(0)}
+        }
+
+        /* Animated happy women illustrations */
+        .heart-overlay .happy-women {
+            position: absolute; width: 100%; height: 100%; pointer-events: none;
+        }
+        .heart-overlay .hw {
+            position: absolute; font-size: 3rem; opacity: 0;
+        }
+        .heart-overlay.active .hw {
+            animation: hwFloat 2.2s ease-out forwards;
+        }
+        .hw:nth-child(1){top:15%;left:8%;animation-delay:0.2s}
+        .hw:nth-child(2){top:20%;right:10%;animation-delay:0.4s}
+        .hw:nth-child(3){bottom:20%;left:12%;animation-delay:0.6s}
+        .hw:nth-child(4){bottom:15%;right:8%;animation-delay:0.3s}
+        .hw:nth-child(5){top:40%;left:5%;animation-delay:0.5s}
+        .hw:nth-child(6){top:35%;right:5%;animation-delay:0.7s}
+        .hw:nth-child(7){bottom:35%;left:18%;animation-delay:0.1s}
+        .hw:nth-child(8){bottom:30%;right:15%;animation-delay:0.8s}
+        .hw:nth-child(9){top:10%;left:45%;animation-delay:0.35s}
+        .hw:nth-child(10){bottom:10%;right:40%;animation-delay:0.55s}
+        @keyframes hwFloat {
+            0%{opacity:0;transform:scale(0) translateY(30px)}
+            30%{opacity:1;transform:scale(1.2) translateY(-10px)}
+            60%{opacity:1;transform:scale(1) translateY(0)}
+            100%{opacity:0;transform:scale(0.8) translateY(-20px)}
+        }
+
+        /* Small heart particles */
+        .heart-overlay .heart-particles {
+            position: absolute; width: 100%; height: 100%; pointer-events: none;
+        }
+        .heart-overlay .hp {
+            position: absolute; font-size: 1.5rem; opacity: 0;
+        }
+        .heart-overlay.active .hp {
+            animation: hpBurst 2s ease-out forwards;
+        }
+        .hp:nth-child(1){top:50%;left:50%;animation-delay:0.6s;--dx:-80px;--dy:-120px}
+        .hp:nth-child(2){top:50%;left:50%;animation-delay:0.7s;--dx:90px;--dy:-100px}
+        .hp:nth-child(3){top:50%;left:50%;animation-delay:0.8s;--dx:-60px;--dy:80px}
+        .hp:nth-child(4){top:50%;left:50%;animation-delay:0.65s;--dx:70px;--dy:110px}
+        .hp:nth-child(5){top:50%;left:50%;animation-delay:0.75s;--dx:-120px;--dy:-40px}
+        .hp:nth-child(6){top:50%;left:50%;animation-delay:0.85s;--dx:130px;--dy:30px}
+        .hp:nth-child(7){top:50%;left:50%;animation-delay:0.9s;--dx:-30px;--dy:140px}
+        .hp:nth-child(8){top:50%;left:50%;animation-delay:0.55s;--dx:50px;--dy:-150px}
+        @keyframes hpBurst {
+            0%{opacity:0;transform:translate(0,0) scale(0)}
+            30%{opacity:1;transform:translate(calc(var(--dx)*0.5),calc(var(--dy)*0.5)) scale(1.2)}
+            70%{opacity:0.7;transform:translate(var(--dx),var(--dy)) scale(1)}
+            100%{opacity:0;transform:translate(calc(var(--dx)*1.3),calc(var(--dy)*1.3)) scale(0.5)}
+        }
+
+        /* ==================== MAIN CONTENT ==================== */
+        .main-content { position: relative; z-index: 2; }
+
+        /* ==================== HERO ==================== */
+        .hero {
+            min-height: 100vh; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; text-align: center;
+            background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 30%, #e8d5f5 60%, #ffe4f0 100%);
+            position: relative; overflow: hidden; padding: 2rem;
+        }
+        .hero::before {
+            content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%;
+            background: radial-gradient(circle, rgba(255,133,162,0.1) 0%, transparent 70%);
+            animation: heroGlow 8s ease-in-out infinite;
+        }
+        @keyframes heroGlow { 0%,100%{transform:translate(0,0)} 50%{transform:translate(5%,5%)} }
+
+        .hero-badge {
+            display:inline-block; background:linear-gradient(135deg,var(--pink),var(--purple));
+            color:white; padding:8px 24px; border-radius:50px; font-size:.9rem; font-weight:600;
+            letter-spacing:2px; text-transform:uppercase; margin-bottom:1.5rem;
+            animation:fadeInDown 1s ease-out; box-shadow:0 4px 15px rgba(232,67,147,.3);
+        }
+        .hero-date {
+            font-family:'Dancing Script',cursive; font-size:5rem; font-weight:700;
+            background:linear-gradient(135deg,var(--pink-deep),var(--purple-deep),var(--pink-dark));
+            background-size:200% 200%; -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+            background-clip:text; animation:gradientShift 4s ease-in-out infinite,fadeInUp 1s ease-out .3s backwards;
+            line-height:1.2; margin-bottom:.5rem;
+        }
+        @keyframes gradientShift { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+        .hero-subtitle {
+            font-family:'Quicksand',sans-serif; font-size:1.5rem; font-weight:500;
+            color:var(--purple-dark); margin-bottom:1rem; animation:fadeInUp 1s ease-out .6s backwards;
+        }
+        .hero-title-main {
+            font-family:'Pacifico',cursive; font-size:2.5rem; color:var(--pink-deep);
+            margin-bottom:2rem; animation:fadeInUp 1s ease-out .9s backwards;
+            text-shadow:2px 2px 4px rgba(232,67,147,.2);
+        }
+        .hero-scroll { animation:fadeInUp 1s ease-out 1.2s backwards,bounce 2s ease-in-out infinite; cursor:pointer; }
+        .hero-scroll a {
+            display:inline-flex; flex-direction:column; align-items:center;
+            text-decoration:none; color:var(--purple); font-weight:600; font-size:.9rem;
+            gap:8px; transition:color .3s;
+        }
+        .hero-scroll a:hover { color:var(--pink-deep); }
+        .scroll-arrow { font-size:1.5rem; }
+        @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(10px)} }
+        @keyframes fadeInUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+        @keyframes fadeInDown { from{opacity:0;transform:translateY(-30px)} to{opacity:1;transform:translateY(0)} }
+
+        /* ==================== NAVIGATION ==================== */
+        .chapter-nav {
+            position:sticky; top:0; z-index:100;
+            background:rgba(255,255,255,.85); backdrop-filter:blur(20px);
+            border-bottom:2px solid var(--pink-light); padding:12px 0;
+            box-shadow:0 2px 20px rgba(232,67,147,.1);
+        }
+        .chapter-nav .nav-inner {
+            max-width:1200px; margin:0 auto; display:flex; align-items:center;
+            justify-content:center; gap:1rem; padding:0 1rem; flex-wrap:wrap;
+        }
+        .nav-link {
+            text-decoration:none; color:var(--purple-dark); font-weight:600; font-size:.85rem;
+            padding:6px 16px; border-radius:50px; transition:all .3s; white-space:nowrap; cursor:pointer;
+        }
+        .nav-link:hover,.nav-link.active {
+            background:linear-gradient(135deg,var(--pink),var(--purple));
+            color:white; box-shadow:0 2px 10px rgba(232,67,147,.3);
+        }
+        .nav-brand {
+            font-family:'Dancing Script',cursive; font-size:1.3rem; font-weight:700;
+            color:var(--pink-deep); text-decoration:none;
+        }
+
+        /* ==================== CHAPTER HEADER ==================== */
+        .chapter-header {
+            background:linear-gradient(135deg,#f093fb 0%,#f5576c 50%,#c471f5 100%);
+            padding:4rem 2rem; text-align:center; position:relative; overflow:hidden;
+        }
+        .chapter-header::before {
+            content:''; position:absolute; inset:0;
+            background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .chapter-header .chapter-label {
+            display:inline-block; background:rgba(255,255,255,.2); backdrop-filter:blur(10px);
+            color:white; padding:6px 20px; border-radius:50px; font-size:.85rem; font-weight:600;
+            letter-spacing:3px; text-transform:uppercase; margin-bottom:1rem; position:relative;
+        }
+        .chapter-header h1 {
+            font-family:'Pacifico',cursive; font-size:3.5rem; color:white;
+            text-shadow:2px 4px 8px rgba(0,0,0,.15); position:relative; margin-bottom:.5rem;
+        }
+        .chapter-header .chapter-age {
+            font-family:'Quicksand',sans-serif; font-size:1.2rem; color:rgba(255,255,255,.9);
+            font-weight:500; position:relative;
+        }
+        .chapter-header .chapter-age span {
+            background:rgba(255,255,255,.25); padding:4px 14px; border-radius:20px;
+        }
+
+        /* ==================== HERO IMAGE GALLERY (top of chapter) ==================== */
+        .hero-gallery {
+            background:linear-gradient(180deg,var(--white-soft) 0%,var(--pink-light) 100%);
+            padding:3rem 1rem;
+        }
+        .hero-gallery .gallery-grid {
+            max-width:1100px; margin:0 auto;
+            display:grid; grid-template-columns:repeat(3,1fr);
+            grid-template-rows:auto auto; gap:12px;
+        }
+        .hero-gallery .gallery-item {
+            border-radius:16px; overflow:hidden;
+            box-shadow:0 4px 20px rgba(0,0,0,.1); transition:transform .4s,box-shadow .4s;
+            position:relative; cursor:pointer;
+        }
+        .hero-gallery .gallery-item:hover {
+            transform:translateY(-5px); box-shadow:0 8px 30px rgba(232,67,147,.25);
+        }
+        .hero-gallery .gallery-item img {
+            width:100%; height:100%; object-fit:cover; display:block;
+        }
+        .hero-gallery .gallery-item.featured { grid-row:span 2; }
+
+        /* ==================== SECTION COMMON ==================== */
+        .section { padding:5rem 2rem; max-width:1000px; margin:0 auto; }
+        .section-icon { font-size:3rem; display:block; text-align:center; margin-bottom:.5rem; }
+        .section-title {
+            font-family:'Dancing Script',cursive; font-size:2.5rem; text-align:center;
+            color:var(--pink-deep); margin-bottom:.5rem;
+        }
+        .section-subtitle {
+            text-align:center; color:var(--purple); font-weight:500; font-size:1rem;
+            margin-bottom:2.5rem; font-style:italic;
+        }
+
+        /* ==================== INFO CARD ==================== */
+        .info-card {
+            background:white; border-radius:24px; padding:2.5rem;
+            box-shadow:0 4px 30px rgba(232,67,147,.08); border:1px solid var(--pink-light);
+            position:relative; overflow:hidden; transition:transform .3s,box-shadow .3s;
+        }
+        .info-card:hover { transform:translateY(-3px); box-shadow:0 8px 40px rgba(232,67,147,.15); }
+        .info-card::before {
+            content:''; position:absolute; top:0; left:0; right:0; height:4px;
+            background:linear-gradient(90deg,var(--pink),var(--purple),var(--pink));
+        }
+        .info-card .card-header { display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem; }
+        .card-icon-circle {
+            width:55px; height:55px; border-radius:50%;
+            display:flex; align-items:center; justify-content:center; font-size:1.5rem; flex-shrink:0;
+        }
+        .card-icon-circle.pink { background:linear-gradient(135deg,var(--pink-light),var(--pink)); }
+        .card-icon-circle.purple { background:linear-gradient(135deg,var(--purple-light),var(--purple)); }
+        .card-header-text h3 { font-family:'Nunito',sans-serif; font-size:1.3rem; font-weight:800; color:var(--text-dark); }
+        .card-header-text .card-tagline { font-size:.85rem; color:var(--purple); font-weight:500; }
+        .card-body p { font-size:1.05rem; line-height:1.8; color:#5a3d5c; }
+        .card-body .highlight {
+            display:inline; background:linear-gradient(180deg,transparent 60%,rgba(255,133,162,.25) 60%);
+            font-weight:600; color:var(--pink-deep);
+        }
+
+        /* ==================== READ MORE ==================== */
+        .read-more-content { max-height:0; overflow:hidden; transition:max-height .6s ease-out,padding .3s; }
+        .read-more-content.expanded { max-height:2000px; }
+        .read-more-content .inner { padding-top:1.5rem; border-top:1px dashed var(--pink-light); margin-top:1.5rem; }
+        .read-more-btn {
+            display:inline-flex; align-items:center; gap:6px; margin-top:1.2rem;
+            background:linear-gradient(135deg,var(--pink-light),var(--purple-light));
+            color:var(--purple-deep); border:none; padding:10px 24px; border-radius:50px;
+            font-family:'Quicksand',sans-serif; font-size:.9rem; font-weight:700; cursor:pointer; transition:all .3s;
+        }
+        .read-more-btn:hover {
+            background:linear-gradient(135deg,var(--pink),var(--purple)); color:white;
+            transform:scale(1.05); box-shadow:0 4px 15px rgba(168,85,247,.3);
+        }
+        .read-more-btn .arrow { transition:transform .3s; display:inline-block; }
+        .read-more-btn.active .arrow { transform:rotate(180deg); }
+
+        /* ==================== BIRTHDAY SECTION ==================== */
+        .birthday-section { background:linear-gradient(180deg,var(--pink-light) 0%,var(--white-soft) 50%,var(--purple-light) 100%); }
+        .birthday-card { display:grid; grid-template-columns:1fr 1.2fr; gap:2rem; align-items:center; }
+        .birthday-visual { position:relative; }
+        .birthday-visual .date-display {
+            background:linear-gradient(135deg,var(--pink-deep),var(--purple));
+            border-radius:24px; padding:2.5rem; text-align:center; color:white;
+            box-shadow:0 8px 30px rgba(232,67,147,.3);
+        }
+        .date-display .day { font-family:'Dancing Script',cursive; font-size:5rem; font-weight:700; line-height:1; }
+        .date-display .month-year { font-size:1.2rem; font-weight:600; opacity:.9; margin-top:.5rem; }
+        .date-display .zodiac {
+            margin-top:1rem; display:inline-block; background:rgba(255,255,255,.2);
+            padding:6px 16px; border-radius:20px; font-size:.9rem;
+        }
+        .birthday-images-row {
+            display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:1rem;
+        }
+        .birthday-images-row img {
+            width:100%; height:180px; object-fit:cover; border-radius:16px;
+            box-shadow:0 4px 15px rgba(0,0,0,.1); cursor:pointer;
+        }
+
+        /* ==================== PERSONALITY ==================== */
+        .personality-section { background:linear-gradient(180deg,var(--purple-light) 0%,var(--white-soft) 100%); }
+        .personality-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1.5rem; margin-bottom:2rem; }
+        .trait-card {
+            background:white; border-radius:20px; padding:2rem; text-align:center;
+            box-shadow:0 4px 20px rgba(168,85,247,.08); border:1px solid var(--purple-light);
+            transition:all .3s; position:relative; overflow:hidden;
+        }
+        .trait-card::after {
+            content:''; position:absolute; bottom:0; left:0; right:0; height:3px;
+            background:linear-gradient(90deg,var(--pink),var(--purple));
+            transform:scaleX(0); transition:transform .3s;
+        }
+        .trait-card:hover::after { transform:scaleX(1); }
+        .trait-card:hover { transform:translateY(-5px); box-shadow:0 8px 30px rgba(168,85,247,.15); }
+        .trait-icon { font-size:2.5rem; margin-bottom:.8rem; }
+        .trait-name { font-family:'Nunito',sans-serif; font-size:1.2rem; font-weight:800; color:var(--purple-deep); margin-bottom:.5rem; }
+        .trait-desc { font-size:.95rem; color:#6b5b7b; line-height:1.6; }
+        .personality-image-accent { display:flex; gap:1rem; margin-top:2rem; justify-content:center; flex-wrap:wrap; }
+        .personality-image-accent img {
+            width:200px; height:260px; object-fit:cover; border-radius:20px;
+            box-shadow:0 4px 20px rgba(168,85,247,.15); transition:transform .3s; cursor:pointer;
+        }
+        .personality-image-accent img:hover { transform:scale(1.03) rotate(-2deg); }
+
+        /* ==================== HOBBY ==================== */
+        .hobby-section { background:linear-gradient(180deg,var(--white-soft) 0%,var(--pink-light) 100%); }
+        .hobby-layout { display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center; }
+        .hobby-visual { position:relative; }
+        .hobby-visual img {
+            width:100%; height:400px; object-fit:cover; border-radius:24px;
+            box-shadow:0 8px 30px rgba(232,67,147,.15);
+        }
+        .hobby-badge {
+            position:absolute; bottom:-15px; right:-10px;
+            background:linear-gradient(135deg,var(--pink),var(--purple)); color:white;
+            padding:10px 20px; border-radius:16px; font-weight:700; font-size:.9rem;
+            box-shadow:0 4px 15px rgba(232,67,147,.3);
+        }
+
+        /* ==================== SCHOOL / EDUCATION ==================== */
+        .school-section { background:linear-gradient(180deg,var(--pink-light) 0%,var(--purple-light) 100%); }
+        .education-timeline {
+            position:relative; max-width:900px; margin:0 auto;
+        }
+        .education-timeline::before {
+            content:''; position:absolute; left:50%; top:0; bottom:0; width:4px;
+            background:linear-gradient(180deg,var(--pink),var(--purple),var(--pink-deep));
+            border-radius:2px; transform:translateX(-50%);
+        }
+        .edu-item {
+            display:flex; align-items:stretch; margin-bottom:3rem; position:relative;
+        }
+        .edu-item:nth-child(odd) { flex-direction:row; }
+        .edu-item:nth-child(even) { flex-direction:row-reverse; }
+        .edu-item .edu-content {
+            width:45%; background:white; border-radius:24px; padding:2rem;
+            box-shadow:0 4px 25px rgba(168,85,247,.08); border:1px solid var(--pink-light);
+            transition:transform .3s,box-shadow .3s; position:relative;
+        }
+        .edu-item .edu-content:hover { transform:translateY(-3px); box-shadow:0 8px 35px rgba(168,85,247,.15); }
+        .edu-dot {
+            position:absolute; left:50%; top:2rem; width:20px; height:20px;
+            background:linear-gradient(135deg,var(--pink),var(--purple)); border-radius:50%;
+            transform:translateX(-50%); border:3px solid white;
+            box-shadow:0 2px 10px rgba(232,67,147,.3); z-index:2;
+        }
+        .edu-spacer { width:10%; }
+        .edu-icon { font-size:2.5rem; margin-bottom:.5rem; }
+        .edu-school-name {
+            font-family:'Nunito',sans-serif; font-size:1.3rem; font-weight:800;
+            color:var(--purple-deep); margin-bottom:.3rem;
+        }
+        .edu-school-type { font-size:.85rem; color:var(--pink-deep); font-weight:600; margin-bottom:.8rem; }
+        .edu-desc { font-size:.95rem; line-height:1.7; color:#5a3d5c; }
+        .edu-desc .highlight {
+            display:inline; background:linear-gradient(180deg,transparent 60%,rgba(255,133,162,.25) 60%);
+            font-weight:600; color:var(--pink-deep);
+        }
+        .school-images {
+            display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-top:1.5rem;
+        }
+        .school-images img {
+            width:100%; height:200px; object-fit:cover; border-radius:16px;
+            box-shadow:0 4px 15px rgba(0,0,0,.08); transition:transform .3s; cursor:pointer;
+        }
+        .school-images img:hover { transform:scale(1.02); }
+
+        /* ==================== DREAM ==================== */
+        .dream-section {
+            background:linear-gradient(180deg,var(--purple-light) 0%,#fce4ec 50%,var(--pink-light) 100%);
+            position:relative;
+        }
+        .dream-hero { text-align:center; margin-bottom:2.5rem; }
+        .dream-hero .dream-emoji { font-size:4rem; margin-bottom:1rem; display:block; }
+        .dream-card {
+            background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(248,215,232,.95));
+            border-radius:30px; padding:3rem; position:relative; overflow:hidden;
+            box-shadow:0 8px 40px rgba(232,67,147,.12); border:2px solid rgba(232,67,147,.1);
+        }
+        .dream-card::before { content:'🩺'; position:absolute; top:20px; right:30px; font-size:4rem; opacity:.1; }
+        .dream-card::after {
+            content:''; position:absolute; top:0; left:0; right:0; height:5px;
+            background:linear-gradient(90deg,var(--pink),var(--purple),var(--pink-deep),var(--purple-deep));
+        }
+        .dream-title {
+            font-family:'Pacifico',cursive; font-size:2rem; color:var(--pink-deep);
+            margin-bottom:1.5rem; display:flex; align-items:center; gap:12px;
+        }
+        .dream-body p { font-size:1.1rem; line-height:1.9; color:#5a3d5c; }
+        .dream-values { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:2rem; }
+        .dream-value {
+            background:white; border-radius:16px; padding:1.5rem; text-align:center;
+            box-shadow:0 2px 15px rgba(168,85,247,.08); transition:all .3s;
+        }
+        .dream-value:hover { transform:translateY(-5px); box-shadow:0 8px 25px rgba(168,85,247,.15); }
+        .dream-value-icon { font-size:2rem; margin-bottom:.5rem; }
+        .dream-value-title { font-weight:800; color:var(--purple-deep); font-size:.95rem; margin-bottom:.3rem; }
+        .dream-value-desc { font-size:.85rem; color:#7b6b8d; line-height:1.5; }
+        .dream-images { display:flex; gap:1rem; margin-top:2rem; justify-content:center; flex-wrap:wrap; }
+        .dream-images img {
+            width:200px; height:280px; object-fit:cover; border-radius:20px;
+            box-shadow:0 4px 20px rgba(232,67,147,.15); transition:transform .3s; cursor:pointer;
+        }
+        .dream-images img:hover { transform:scale(1.03) rotate(2deg); }
+
+        /* ==================== WISHES ==================== */
+        .wishes-section {
+            background:linear-gradient(135deg,#f093fb 0%,#f5576c 30%,#c471f5 60%,#e84393 100%);
+            padding:5rem 2rem; text-align:center; position:relative; overflow:hidden;
+        }
+        .wishes-section::before {
+            content:''; position:absolute; inset:0;
+            background:url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 30 C50 20, 65 10, 65 25 C65 35, 50 45, 50 50 C50 45, 35 35, 35 25 C35 10, 50 20, 50 30' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+        }
+        .wishes-content { max-width:800px; margin:0 auto; position:relative; }
+        .wishes-flower { font-size:3rem; margin-bottom:1rem; }
+        .wishes-heading {
+            font-family:'Pacifico',cursive; font-size:2.5rem; color:white;
+            margin-bottom:.5rem; text-shadow:2px 3px 6px rgba(0,0,0,.15);
+        }
+        .wishes-for { font-family:'Dancing Script',cursive; font-size:1.8rem; color:var(--gold-light); margin-bottom:2rem; }
+        .wishes-text {
+            background:rgba(255,255,255,.15); backdrop-filter:blur(10px);
+            border-radius:24px; padding:2.5rem; border:1px solid rgba(255,255,255,.2);
+        }
+        .wishes-text p { font-size:1.15rem; line-height:2; color:white; font-weight:500; }
+        .wishes-signature { margin-top:2rem; font-family:'Dancing Script',cursive; font-size:1.5rem; color:var(--gold-light); }
+        .wishes-hearts { margin-top:1.5rem; font-size:1.5rem; letter-spacing:8px; }
+
+        /* ==================== FULL GALLERY ==================== */
+        .gallery-section { background:var(--white-soft); padding:4rem 2rem; }
+        .gallery-masonry { max-width:1100px; margin:0 auto; columns:3; column-gap:15px; }
+        .gallery-masonry .gallery-photo {
+            break-inside:avoid; margin-bottom:15px; border-radius:16px; overflow:hidden;
+            box-shadow:0 4px 15px rgba(0,0,0,.08); transition:all .3s; cursor:pointer;
+        }
+        .gallery-masonry .gallery-photo:hover { box-shadow:0 8px 30px rgba(232,67,147,.2); transform:scale(1.01); }
+        .gallery-masonry .gallery-photo img { width:100%; display:block; }
+
+        /* ==================== LIGHTBOX ==================== */
+        .lightbox {
+            display:none; position:fixed; inset:0; background:rgba(0,0,0,.9);
+            z-index:10000; align-items:center; justify-content:center; cursor:pointer;
+        }
+        .lightbox.active { display:flex; }
+        .lightbox img {
+            max-width:90vw; max-height:90vh; object-fit:contain; border-radius:12px;
+            box-shadow:0 0 50px rgba(232,67,147,.3);
+        }
+        .lightbox-close {
+            position:absolute; top:20px; right:30px; font-size:2rem; color:white; cursor:pointer;
+            background:rgba(255,255,255,.1); width:50px; height:50px; border-radius:50%;
+            display:flex; align-items:center; justify-content:center; transition:background .3s;
+        }
+        .lightbox-close:hover { background:rgba(255,255,255,.3); }
+
+        /* ==================== CHARACTER ICON (bottom-left) ==================== */
+        .character-icon {
+            position:fixed; bottom:20px; left:20px; z-index:999;
+            width:80px; height:80px; border-radius:50%;
+            background:linear-gradient(135deg,var(--pink-light),var(--purple-light));
+            border:3px solid var(--pink); box-shadow:0 4px 20px rgba(232,67,147,.3);
+            overflow:hidden; cursor:pointer; transition:all .3s;
+            animation:iconFloat 3s ease-in-out infinite;
+        }
+        .character-icon:hover {
+            transform:scale(1.15); box-shadow:0 6px 30px rgba(232,67,147,.5);
+        }
+        .character-icon img {
+            width:100%; height:100%; object-fit:cover;
+        }
+        .character-icon .icon-name {
+            position:absolute; bottom:-30px; left:50%; transform:translateX(-50%);
+            background:linear-gradient(135deg,var(--pink),var(--purple)); color:white;
+            padding:3px 12px; border-radius:12px; font-size:.7rem; font-weight:700;
+            white-space:nowrap; opacity:0; transition:all .3s;
+            font-family:'Quicksand',sans-serif;
+        }
+        .character-icon:hover .icon-name { opacity:1; bottom:-28px; }
+        @keyframes iconFloat {
+            0%,100%{transform:translateY(0)}
+            50%{transform:translateY(-8px)}
+        }
+        .character-icon:hover { animation:none; transform:scale(1.15); }
+
+        /* ==================== FOOTER ==================== */
+        .footer {
+            background:linear-gradient(135deg,var(--text-dark),#2d1b36);
+            padding:2rem; text-align:center; color:rgba(255,255,255,.6); font-size:.85rem;
+        }
+        .footer .footer-hearts { font-size:1.2rem; margin-bottom:.5rem; letter-spacing:5px; }
+
+        /* ==================== BACK TO TOP ==================== */
+        .back-to-top {
+            position:fixed; bottom:24px; right:24px; z-index:1000; width:48px; height:48px;
+            border-radius:50%; background:linear-gradient(135deg,var(--purple-light),var(--pink-light));
+            border:2px solid var(--pink); color:var(--pink-deep); font-size:1.2rem; cursor:pointer;
+            display:flex; align-items:center; justify-content:center; transition:all .3s;
+            opacity:0; pointer-events:none;
+        }
+        .back-to-top.show { opacity:1; pointer-events:all; }
+        .back-to-top:hover {
+            transform:translateY(-3px);
+            background:linear-gradient(135deg,var(--pink),var(--purple)); color:white;
+        }
+
+        /* ==================== SCROLL ANIMATIONS ==================== */
+        .animate-on-scroll {
+            opacity:0; transform:translateY(40px);
+            transition:opacity .8s ease-out,transform .8s ease-out;
+        }
+        .animate-on-scroll.visible { opacity:1; transform:translateY(0); }
+        .animate-on-scroll.delay-1{transition-delay:.1s}
+        .animate-on-scroll.delay-2{transition-delay:.2s}
+        .animate-on-scroll.delay-3{transition-delay:.3s}
+        .animate-on-scroll.delay-4{transition-delay:.4s}
+
+        /* ==================== RESPONSIVE ==================== */
+        @media(max-width:768px){
+            .hero-date{font-size:3rem}
+            .hero-title-main{font-size:1.5rem}
+            .chapter-header h1{font-size:2.2rem}
+            .hero-gallery .gallery-grid{grid-template-columns:repeat(2,1fr)}
+            .birthday-card{grid-template-columns:1fr}
+            .personality-grid{grid-template-columns:1fr}
+            .hobby-layout{grid-template-columns:1fr}
+            .dream-values{grid-template-columns:1fr}
+            .gallery-masonry{columns:2}
+            .personality-image-accent img{width:150px;height:200px}
+            .dream-images img{width:150px;height:200px}
+            .school-images{grid-template-columns:1fr}
+            .section{padding:3rem 1.5rem}
+            .info-card{padding:1.8rem}
+            .education-timeline::before{left:20px}
+            .edu-item,.edu-item:nth-child(even){flex-direction:column;align-items:flex-start;padding-left:50px}
+            .edu-item .edu-content{width:100%}
+            .edu-dot{left:20px;top:1rem}
+            .edu-spacer{display:none}
+            .heart-overlay .giant-heart{font-size:8rem!important}
+        }
+        @media(max-width:480px){
+            .hero-date{font-size:2.5rem}
+            .hero-gallery .gallery-grid{grid-template-columns:1fr}
+            .gallery-masonry{columns:1}
+            .personality-image-accent{flex-direction:column;align-items:center}
+            .dream-images{flex-direction:column;align-items:center}
+            .birthday-images-row{grid-template-columns:1fr}
+        }
+    </style>
+</head>
+<body>
+    <!-- ==================== FLOATING TEDDY BEARS ==================== -->
+    <div class="bears-container">
+        <span class="bear">🧸</span><span class="bear">🐻</span><span class="bear">🧸</span>
+        <span class="bear">🐻</span><span class="bear">🧸</span><span class="bear">🐻</span>
+        <span class="bear">🧸</span><span class="bear">🐻</span><span class="bear">🧸</span>
+        <span class="bear">🐻</span><span class="bear">🧸</span><span class="bear">🐻</span>
+        <span class="bear">🧸</span><span class="bear">🐻</span><span class="bear">🧸</span>
+        <span class="bear">🐻</span>
+    </div>
+
+    <!-- ==================== FALLING PETALS ==================== -->
+    <div class="petals-container">
+        <span class="petal">🌸</span><span class="petal">🩷</span><span class="petal">💮</span>
+        <span class="petal">🌷</span><span class="petal">🌸</span><span class="petal">💗</span>
+        <span class="petal">🌺</span><span class="petal">🩷</span><span class="petal">🌸</span>
+        <span class="petal">💮</span><span class="petal">🌷</span><span class="petal">🌸</span>
+    </div>
+
+    <!-- ==================== HEART TRANSITION OVERLAY ==================== -->
+    <div class="heart-overlay" id="heartOverlay">
+        <div class="happy-women">
+            <span class="hw">💃</span><span class="hw">👩‍🎓</span><span class="hw">🥳</span>
+            <span class="hw">👩‍⚕️</span><span class="hw">💐</span><span class="hw">🎊</span>
+            <span class="hw">👸</span><span class="hw">🌸</span><span class="hw">🎉</span>
+            <span class="hw">🌹</span>
+        </div>
+        <div class="heart-particles">
+            <span class="hp">💕</span><span class="hp">💗</span><span class="hp">💖</span>
+            <span class="hp">🩷</span><span class="hp">💝</span><span class="hp">💘</span>
+            <span class="hp">❤️</span><span class="hp">💜</span>
+        </div>
+        <div class="giant-heart">💖</div>
+        <div class="heart-name" id="heartName">Phạm Hoàng Thủy Linh</div>
+    </div>
+
+    <!-- ==================== LIGHTBOX ==================== -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-close" onclick="closeLightbox()">✕</div>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <div class="main-content">
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="hero">
+            <div class="hero-badge">✨ Tri Ân Ngày Phụ Nữ Việt Nam ✨</div>
+            <div class="hero-date">20/10</div>
+            <div class="hero-subtitle">Ngày tôn vinh vẻ đẹp, sức mạnh và tình yêu thương</div>
+            <div class="hero-title-main">💐 Gửi Đến Những Người Phụ Nữ Tuyệt Vời 💐</div>
+            <div class="hero-scroll">
+                <a href="javascript:void(0)" onclick="navigateToChapter('chapter-thuylinh','Phạm Hoàng Thủy Linh')">
+                    <span>Khám Phá Ngay</span>
+                    <span class="scroll-arrow">⬇️</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== NAVIGATION ===== -->
+        <nav class="chapter-nav" id="navbar">
+            <div class="nav-inner">
+                <a href="#hero" class="nav-brand">💐 20/10</a>
+                <a href="javascript:void(0)" class="nav-link" onclick="navigateToChapter('chapter-thuylinh','Phạm Hoàng Thủy Linh')">🌸 Thủy Linh</a>
+                <a href="#sec-birthday" class="nav-link">🎂 Sinh Nhật</a>
+                <a href="#sec-personality" class="nav-link">💜 Tính Cách</a>
+                <a href="#sec-hobby" class="nav-link">🎵 Sở Thích</a>
+                <a href="#sec-school" class="nav-link">🏫 Trường Học</a>
+                <a href="#sec-dream" class="nav-link">🩺 Ước Mơ</a>
+                <a href="#sec-wishes" class="nav-link">💌 Lời Chúc</a>
+                <a href="#sec-gallery" class="nav-link">📸 Khoảnh Khắc</a>
+            </div>
+        </nav>
+
+        <!-- ===== CHAPTER: PHẠM HOÀNG THỦY LINH ===== -->
+        <section class="chapter-header" id="chapter-thuylinh">
+            <span class="chapter-label">✿ Chương 1 ✿</span>
+            <h1>Phạm Hoàng Thủy Linh</h1>
+            <div class="chapter-age"><span>🌟 16 tuổi — Tuổi của những ước mơ rực rỡ 🌟</span></div>
+        </section>
+
+        <!-- ===== HERO GALLERY — All 19 images distributed ===== -->
+        <div class="hero-gallery">
+            <div class="gallery-grid">
+                <div class="gallery-item featured" onclick="openLightbox('images/ao-dai-temple.jpg')">
+                    <img src="images/ao-dai-temple.jpg" alt="Thủy Linh trong tà áo dài" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/graduation-standing.jpg')">
+                    <img src="images/graduation-standing.jpg" alt="Thủy Linh ngày tốt nghiệp" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/night-lights.jpg')">
+                    <img src="images/night-lights.jpg" alt="Thủy Linh dạo phố" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/metro-pose2.jpg')">
+                    <img src="images/metro-pose2.jpg" alt="Thủy Linh tại metro" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/aquarium.jpg')">
+                    <img src="images/aquarium.jpg" alt="Thủy Linh tham quan" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== BIRTHDAY SECTION ===== -->
+        <div class="birthday-section" id="sec-birthday">
+            <div class="section">
+                <div class="section-icon">🎂</div>
+                <h2 class="section-title">Ngày Sinh Đặc Biệt</h2>
+                <p class="section-subtitle">"Một ngôi sao đặc biệt, sinh ra vào một ngày đặc biệt"</p>
+
+                <div class="birthday-card animate-on-scroll">
+                    <div class="birthday-visual">
+                        <div class="date-display">
+                            <div class="day">19</div>
+                            <div class="month-year">Tháng 10 / 2010</div>
+                            <div class="zodiac">♎ Thiên Bình — Cung hoàng đạo của sự cân bằng &amp; hài hòa</div>
+                        </div>
+                        <div class="birthday-images-row">
+                            <img src="images/birthday-friends.jpg" alt="Sinh nhật cùng bạn bè" onclick="openLightbox('images/birthday-friends.jpg')">
+                            <img src="images/birthday-family.jpg" alt="Sinh nhật cùng gia đình" onclick="openLightbox('images/birthday-family.jpg')">
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-header">
+                            <div class="card-icon-circle pink">🎀</div>
+                            <div class="card-header-text">
+                                <h3>Sinh Ra Ngay Trước Ngày 20/10</h3>
+                                <span class="card-tagline">Một món quà của cuộc đời</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Sinh nhật <span class="highlight">19/10</span> — chỉ đúng một ngày trước Ngày Phụ Nữ Việt Nam. Như thể cuộc đời đã dành riêng một "lễ khai mạc" cho ngày tôn vinh phụ nữ, bằng cách mang đến thế giới này một cô gái đặc biệt. 🌸
+                            </p>
+                            <p style="margin-top:1rem;">
+                                Thuộc cung <span class="highlight">Thiên Bình ♎</span> — cung hoàng đạo của sự hài hòa, công bằng và vẻ đẹp. Người Thiên Bình luôn tìm kiếm sự cân bằng trong mọi thứ, yêu cái đẹp và trân trọng những mối quan hệ xung quanh.
+                            </p>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Xem thêm <span class="arrow">▼</span>
+                        </button>
+                        <div class="read-more-content">
+                            <div class="inner">
+                                <p style="font-size:1.05rem;line-height:1.8;color:#5a3d5c">
+                                    Sinh nhật vào tháng 10 — tháng của mùa thu dịu dàng, khi nắng vàng nhẹ nhàng len lỏi qua những tán lá. Đó cũng là tháng của tình yêu thương, khi cả thế giới dành lời chúc đẹp nhất cho phụ nữ. Thủy Linh sinh ra như một đóa hoa thu, mang trong mình vẻ đẹp dịu dàng nhưng đầy sức sống. 🍂✨
+                                </p>
+                                <p style="margin-top:1rem;font-size:1.05rem;line-height:1.8;color:#5a3d5c">
+                                    16 tuổi — tuổi của những giấc mơ bay cao, của trái tim rộn ràng và đôi mắt lấp lánh niềm tin vào tương lai. Ở tuổi 16, mỗi ngày đều là một trang mới đầy hứa hẹn, mỗi bước đi đều mang theo hy vọng. Và Thủy Linh đang viết nên câu chuyện tuổi trẻ tuyệt vời nhất của riêng mình. 🌟
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== PERSONALITY SECTION ===== -->
+        <div class="personality-section" id="sec-personality">
+            <div class="section">
+                <div class="section-icon">💜</div>
+                <h2 class="section-title">Tính Cách Đáng Yêu</h2>
+                <p class="section-subtitle">"Nơi vẻ đẹp tâm hồn tỏa sáng rực rỡ nhất"</p>
+
+                <div class="personality-grid">
+                    <div class="trait-card animate-on-scroll delay-1">
+                        <div class="trait-icon">🕊️</div>
+                        <div class="trait-name">Hiền Hậu</div>
+                        <div class="trait-desc">Sự hiền hậu của Thủy Linh như một dòng suối mát lành, nhẹ nhàng mà sâu sắc. Đó là vẻ đẹp từ bên trong tỏa ra, khiến ai ở bên cũng cảm thấy bình yên.</div>
+                    </div>
+                    <div class="trait-card animate-on-scroll delay-2">
+                        <div class="trait-icon">🌊</div>
+                        <div class="trait-name">Chan Hòa</div>
+                        <div class="trait-desc">Luôn hòa mình vào tập thể, không phân biệt, không xa cách. Sự chan hòa ấy tạo nên sợi dây kết nối mọi người lại với nhau.</div>
+                    </div>
+                    <div class="trait-card animate-on-scroll delay-3">
+                        <div class="trait-icon">😊</div>
+                        <div class="trait-name">Hay Mỉm Cười</div>
+                        <div class="trait-desc">Nụ cười là ngôn ngữ đẹp nhất. Thủy Linh mang theo nụ cười như ánh nắng, sưởi ấm và truyền năng lượng tích cực cho mọi người xung quanh.</div>
+                    </div>
+                    <div class="trait-card animate-on-scroll delay-4">
+                        <div class="trait-icon">🤝</div>
+                        <div class="trait-name">Thân Thiện</div>
+                        <div class="trait-desc">Sự thân thiện khiến khoảng cách tan biến. Dù gặp ai, dù ở đâu, Thủy Linh luôn khiến người khác cảm thấy được chào đón và trân trọng.</div>
+                    </div>
+                </div>
+
+                <div class="info-card animate-on-scroll" style="margin-top:2rem;">
+                    <div class="card-header">
+                        <div class="card-icon-circle purple">💎</div>
+                        <div class="card-header-text">
+                            <h3>Vẻ Đẹp Tâm Hồn</h3>
+                            <span class="card-tagline">Sự kết hợp hoàn hảo của những phẩm chất đáng quý</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Bốn tính cách ấy — <span class="highlight">hiền hậu, chan hòa, hay mỉm cười, thân thiện</span> — không phải là bốn mảnh ghép rời rạc, mà là một bức tranh tổng thể về một tâm hồn đẹp. Đó là vẻ đẹp mà không cần son phấn, không cần trang sức, chỉ cần một trái tim chân thành là đủ tỏa sáng. 💖
+                        </p>
+                    </div>
+                    <button class="read-more-btn" onclick="toggleReadMore(this)">
+                        Xem thêm <span class="arrow">▼</span>
+                    </button>
+                    <div class="read-more-content">
+                        <div class="inner">
+                            <p style="font-size:1.05rem;line-height:1.8;color:#5a3d5c">
+                                Trong thế giới hiện đại đầy vội vã, những phẩm chất như hiền hậu và thân thiện trở nên quý giá hơn bao giờ hết. Thủy Linh mang trong mình sự dịu dàng của mùa thu, nhưng cũng có sức mạnh nội tâm vững vàng. Sự chan hòa không phải là yếu đuối — đó là bản lĩnh của người hiểu rằng yêu thương và kết nối mới là điều quan trọng nhất. 🌸
+                            </p>
+                            <p style="margin-top:1rem;font-size:1.05rem;line-height:1.8;color:#5a3d5c">
+                                Và nụ cười — vũ khí bí mật nhưng mạnh mẽ nhất. Khoa học đã chứng minh rằng một nụ cười chân thành có thể thay đổi cả một ngày của ai đó. Thủy Linh, với thói quen hay mỉm cười, chính là "ánh nắng di động" mang theo niềm vui đến mọi nơi. Đó là phẩm chất mà không phải ai cũng có được, và đáng để trân trọng mãi. ✨
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personality-image-accent animate-on-scroll">
+                    <img src="images/ao-dai-sky.jpg" alt="Thủy Linh duyên dáng" onclick="openLightbox('images/ao-dai-sky.jpg')">
+                    <img src="images/selfie-cute.jpg" alt="Thủy Linh đáng yêu" onclick="openLightbox('images/selfie-cute.jpg')">
+                    <img src="images/cool-hat.jpg" alt="Thủy Linh cá tính" onclick="openLightbox('images/cool-hat.jpg')">
+                    <img src="images/metro-pose1.jpg" alt="Thủy Linh năng động" onclick="openLightbox('images/metro-pose1.jpg')">
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== HOBBY SECTION ===== -->
+        <div class="hobby-section" id="sec-hobby">
+            <div class="section">
+                <div class="section-icon">🎵</div>
+                <h2 class="section-title">Sở Thích Thú Vị</h2>
+                <p class="section-subtitle">"Khi sở thích nói lên tâm hồn"</p>
+
+                <div class="hobby-layout animate-on-scroll">
+                    <div class="hobby-visual">
+                        <img src="images/night-lights.jpg" alt="Thủy Linh yêu đời" onclick="openLightbox('images/night-lights.jpg')">
+                        <div class="hobby-badge">🎵 Tinh Hà Say Hi 🎵</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-header">
+                            <div class="card-icon-circle pink">🎶</div>
+                            <div class="card-header-text">
+                                <h3>Tinh Hà Say Hi</h3>
+                                <span class="card-tagline">Sở thích phản ánh tâm hồn lãng mạn</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                <span class="highlight">Tinh Hà Say Hi</span> — một sở thích đầy chất thơ và trẻ trung! Đó không chỉ là một trò giải trí, mà còn phản ánh tâm hồn bay bổng, lạc quan và yêu đời của Thủy Linh. 🌟
+                            </p>
+                            <p style="margin-top:1rem">
+                                Trong thế giới của những niềm vui nhỏ bé, sở thích này cho thấy Thủy Linh biết cách tận hưởng cuộc sống, biết cách tìm thấy hạnh phúc từ những điều giản dị nhất.
+                            </p>
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">
+                            Xem thêm <span class="arrow">▼</span>
+                        </button>
+                        <div class="read-more-content">
+                            <div class="inner">
+                                <p style="font-size:1.05rem;line-height:1.8;color:#5a3d5c">
+                                    Sở thích nói lên rất nhiều về con người. Khi một cô gái 16 tuổi yêu thích Tinh Hà Say Hi, điều đó cho thấy bạn ấy có tâm hồn trẻ trung, yêu sự sáng tạo và không ngại thể hiện bản thân. 🎨
+                                </p>
+                                <p style="margin-top:1rem;font-size:1.05rem;line-height:1.8;color:#5a3d5c">
+                                    Đây cũng là cách để Thủy Linh thư giãn sau những giờ học căng thẳng, tìm lại năng lượng và cảm hứng cho bản thân. Mỗi người đều cần một "góc riêng" để là chính mình, và Tinh Hà Say Hi chính là góc riêng dễ thương ấy của Thủy Linh. 💕
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== SCHOOL / EDUCATION SECTION (TIMELINE) ===== -->
+        <div class="school-section" id="sec-school">
+            <div class="section">
+                <div class="section-icon">🏫</div>
+                <h2 class="section-title">Hành Trình Giáo Dục</h2>
+                <p class="section-subtitle">"Mỗi ngôi trường là một chặng đường, mỗi chặng đường là một bài học quý giá"</p>
+
+                <div class="education-timeline">
+
+                    <!-- === Tiểu học Tân Trụ === -->
+                    <div class="edu-item animate-on-scroll">
+                        <div class="edu-content">
+                            <div class="edu-icon">🌱</div>
+                            <div class="edu-school-name">Tiểu Học Tân Trụ</div>
+                            <div class="edu-school-type">Bậc Tiểu Học — Nền tảng đầu tiên</div>
+                            <div class="edu-desc">
+                                <p>
+                                    <span class="highlight">Tiểu học Tân Trụ</span> là nơi Thủy Linh bắt đầu hành trình chinh phục tri thức. Từ những nét chữ đầu tiên, những phép tính đơn giản, đến những bài học về đạo đức — tất cả đều được gieo mầm tại đây.
+                                </p>
+                                <p style="margin-top:.8rem">
+                                    Việc hoàn thành bậc tiểu học cho thấy sự <span class="highlight">chăm chỉ, ngoan ngoãn và ham học hỏi</span> ngay từ nhỏ. Đó là nền móng vững chắc cho mọi thành tựu sau này.
+                                </p>
+                            </div>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">
+                                Xem thêm <span class="arrow">▼</span>
+                            </button>
+                            <div class="read-more-content">
+                                <div class="inner">
+                                    <p style="font-size:.95rem;line-height:1.7;color:#5a3d5c">
+                                        Những năm tiểu học là giai đoạn hình thành nhân cách quan trọng nhất. Tại Tân Trụ, Thủy Linh không chỉ học kiến thức mà còn học cách làm người — biết yêu thương, biết chia sẻ, biết tôn trọng thầy cô và bạn bè. Chính những giá trị ấy đã tạo nên tính cách hiền hậu, thân thiện mà ai cũng yêu mến hôm nay. 🌸
+                                    </p>
+                                    <p style="margin-top:.8rem;font-size:.95rem;line-height:1.7;color:#5a3d5c">
+                                        Ảnh hưởng của những năm tiểu học đối với sự phát triển con người là vô cùng lớn. Một cô gái lớn lên với nền tảng giáo dục tốt từ Tân Trụ sẽ luôn biết cách ứng xử đúng đắn, biết phân biệt phải trái, và biết nỗ lực để đạt được mục tiêu. ✨
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="school-images" style="grid-template-columns:1fr 1fr;">
+                                <img src="images/childhood-siblings.jpg" alt="Thủy Linh thuở nhỏ cùng anh chị em" onclick="openLightbox('images/childhood-siblings.jpg')">
+                                <img src="images/baby-traditional.jpg" alt="Thủy Linh trong trang phục truyền thống" onclick="openLightbox('images/baby-traditional.jpg')">
+                            </div>
+                        </div>
+                        <div class="edu-spacer"></div>
+                        <div style="width:45%"></div>
+                        <div class="edu-dot"></div>
+                    </div>
+
+                    <!-- === THCS Ngô Quyền === -->
+                    <div class="edu-item animate-on-scroll">
+                        <div style="width:45%"></div>
+                        <div class="edu-spacer"></div>
+                        <div class="edu-content">
+                            <div class="edu-icon">📖</div>
+                            <div class="edu-school-name">THCS Ngô Quyền</div>
+                            <div class="edu-school-type">Bậc Trung Học Cơ Sở — Chặng đường trưởng thành</div>
+                            <div class="edu-desc">
+                                <p>
+                                    <span class="highlight">THCS Ngô Quyền</span> — ngôi trường đánh dấu bước chuyển quan trọng từ thời thơ ấu sang tuổi trưởng thành. Tại đây, Thủy Linh bắt đầu khám phá bản thân sâu sắc hơn, phát triển tư duy độc lập và xây dựng những mối quan hệ bạn bè đáng quý.
+                                </p>
+                                <p style="margin-top:.8rem">
+                                    4 năm tại Ngô Quyền thể hiện sự <span class="highlight">bền bỉ, tinh thần vượt khó và khả năng thích nghi</span> đáng ngưỡng mộ. Mỗi kỳ thi, mỗi bài kiểm tra đều là một cuộc chiến nhỏ mà Thủy Linh đã vượt qua bằng nỗ lực bản thân.
+                                </p>
+                            </div>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">
+                                Xem thêm <span class="arrow">▼</span>
+                            </button>
+                            <div class="read-more-content">
+                                <div class="inner">
+                                    <p style="font-size:.95rem;line-height:1.7;color:#5a3d5c">
+                                        Bậc THCS là giai đoạn "bản lề" khi các em học sinh chuyển từ tư duy cụ thể sang tư duy trừu tượng, từ sự phụ thuộc sang sự tự lập. Tại THCS Ngô Quyền, Thủy Linh đã học cách quản lý thời gian, đặt mục tiêu và theo đuổi chúng đến cùng. 📚
+                                    </p>
+                                    <p style="margin-top:.8rem;font-size:.95rem;line-height:1.7;color:#5a3d5c">
+                                        Đặc biệt, với ước mơ trở thành bác sĩ, những kiến thức nền tảng về khoa học tự nhiên được học tại đây chính là viên gạch đầu tiên. Từ Sinh học, Hóa học đến Vật lý — tất cả đều được Thủy Linh tiếp thu và nuôi dưỡng đam mê. Ngôi trường này đã giúp bạn ấy nhận ra mình muốn gì, và dũng cảm bước đi theo con đường đó. 💪
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="school-images" style="grid-template-columns:1fr 1fr;">
+                                <img src="images/childhood-award.jpg" alt="Thủy Linh nhận giải thưởng" onclick="openLightbox('images/childhood-award.jpg')">
+                                <img src="images/casual-mall.jpg" alt="Thủy Linh đi chơi" onclick="openLightbox('images/casual-mall.jpg')">
+                            </div>
+                        </div>
+                        <div class="edu-dot"></div>
+                    </div>
+
+                    <!-- === THPT Tây Thạnh === -->
+                    <div class="edu-item animate-on-scroll">
+                        <div class="edu-content">
+                            <div class="edu-icon">🎓</div>
+                            <div class="edu-school-name">THPT Tây Thạnh</div>
+                            <div class="edu-school-type">Bậc Trung Học Phổ Thông — Bước đệm cho ước mơ</div>
+                            <div class="edu-desc">
+                                <p>
+                                    <span class="highlight">THPT Tây Thạnh</span> — không chỉ là nơi học tập, mà còn là nơi Thủy Linh rèn luyện bản thân, vượt qua thử thách và khẳng định giá trị của mình. Mỗi ngày đến trường là một ngày mới để cố gắng, để vươn lên và để trưởng thành hơn. 📚
+                                </p>
+                                <p style="margin-top:.8rem">
+                                    Việc theo học tại THPT Tây Thạnh thể hiện sự <span class="highlight">kiên trì, nỗ lực và quyết tâm</span> của Thủy Linh trên con đường chinh phục tri thức. Đó là bước đệm quan trọng nhất để hiện thực hóa giấc mơ trở thành bác sĩ trong tương lai.
+                                </p>
+                            </div>
+                            <button class="read-more-btn" onclick="toggleReadMore(this)">
+                                Xem thêm <span class="arrow">▼</span>
+                            </button>
+                            <div class="read-more-content">
+                                <div class="inner">
+                                    <p style="font-size:.95rem;line-height:1.7;color:#5a3d5c">
+                                        Mỗi ngôi trường đều mang trong mình những bài học quý giá. THPT Tây Thạnh không chỉ dạy kiến thức, mà còn dạy cách sống, cách yêu thương và cách vươn lên. Ở đây, Thủy Linh học được rằng thành công không đến từ may mắn, mà đến từ sự kiên nhẫn và nỗ lực không ngừng. 🌱
+                                    </p>
+                                    <p style="margin-top:.8rem;font-size:.95rem;line-height:1.7;color:#5a3d5c">
+                                        Ba năm THPT là khoảng thời gian vàng để xây dựng nền tảng cho tương lai. Với một cô gái mơ ước trở thành bác sĩ, mỗi bài học, mỗi kỳ thi tại Tây Thạnh đều là những viên gạch xây nên con đường đến với ngành y — con đường đầy thử thách nhưng cũng vô cùng cao quý. Từ Tiểu học Tân Trụ → THCS Ngô Quyền → THPT Tây Thạnh, mỗi bước đi đều cho thấy Thủy Linh là một cô gái không bao giờ dừng bước, luôn tiến về phía trước với đôi mắt sáng ngời và trái tim kiên cường. 💪✨
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="school-images">
+                                <img src="images/graduation-standing.jpg" alt="Thủy Linh trong lễ tốt nghiệp" onclick="openLightbox('images/graduation-standing.jpg')">
+                                <img src="images/graduation-stairs.jpg" alt="Thủy Linh xinh đẹp" onclick="openLightbox('images/graduation-stairs.jpg')">
+                                <img src="images/group-temple.jpg" alt="Thủy Linh cùng bạn bè" onclick="openLightbox('images/group-temple.jpg')">
+                                <img src="images/metro-pose3.jpg" alt="Thủy Linh năng động" onclick="openLightbox('images/metro-pose3.jpg')">
+                            </div>
+                        </div>
+                        <div class="edu-spacer"></div>
+                        <div style="width:45%"></div>
+                        <div class="edu-dot"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== DREAM SECTION ===== -->
+        <div class="dream-section" id="sec-dream">
+            <div class="section">
+                <div class="dream-hero">
+                    <span class="dream-emoji">🩺</span>
+                    <h2 class="section-title" style="font-size:3rem;">Ước Mơ Trở Thành Bác Sĩ</h2>
+                    <p class="section-subtitle" style="font-size:1.1rem;">"Khi ước mơ không chỉ dành cho mình, mà dành cho cả thế giới"</p>
+                </div>
+
+                <div class="dream-card animate-on-scroll">
+                    <div class="dream-title">
+                        <span>👩‍⚕️</span>
+                        <span>Giấc Mơ Áo Blouse Trắng</span>
+                    </div>
+                    <div class="dream-body">
+                        <p>
+                            Ước mơ trở thành <span class="highlight">bác sĩ</span> — đó không phải là một ước mơ bình thường. Đó là ước mơ của một trái tim nhân hậu, của một tâm hồn luôn hướng về phía cộng đồng. Khi một cô gái 16 tuổi nói "Em muốn làm bác sĩ", điều đó có nghĩa là em ấy sẵn sàng dành cả cuộc đời mình để chữa lành nỗi đau cho người khác. 💫
+                        </p>
+                        <p style="margin-top:1rem">
+                            Nghề bác sĩ đòi hỏi không chỉ <span class="highlight">trí tuệ</span>, mà còn cần <span class="highlight">lòng nhân ái, sự kiên nhẫn và đức hy sinh</span>. Và Thủy Linh — với tính cách hiền hậu, thân thiện — chính là hình mẫu hoàn hảo cho một bác sĩ tương lai. Bởi vì bác sĩ giỏi nhất không phải là người giỏi nhất, mà là người có trái tim ấm áp nhất. 🩷
+                        </p>
+                    </div>
+                    <button class="read-more-btn" onclick="toggleReadMore(this)">
+                        Xem thêm <span class="arrow">▼</span>
+                    </button>
+                    <div class="read-more-content">
+                        <div class="inner">
+                            <p style="font-size:1.05rem;line-height:1.8;color:#5a3d5c">
+                                Con đường từ một học sinh THPT đến chiếc áo blouse trắng là con đường dài và đầy thử thách. Cần ít nhất 6 năm đại học y khoa, rồi thêm nhiều năm thực tập, rồi cả đời không ngừng học hỏi. Nhưng với một người có ước mơ mãnh liệt, mỗi bước đi đều đáng giá. 🌟
+                            </p>
+                            <p style="margin-top:1rem;font-size:1.05rem;line-height:1.8;color:#5a3d5c">
+                                Thủy Linh mơ ước trở thành bác sĩ — nghĩa là em muốn trở thành người mang lại hy vọng cho những ai đang đau đớn, mang nụ cười cho những gia đình đang lo lắng, và mang sự sống cho những nơi cần nó nhất. Đó là ước mơ cao quý nhất mà một người trẻ có thể có. 🏥
+                            </p>
+                            <p style="margin-top:1rem;font-size:1.05rem;line-height:1.8;color:#5a3d5c">
+                                Với tính cách hiền hậu và nụ cười thân thiện, Thủy Linh sẽ không chỉ chữa bệnh cho cơ thể, mà còn chữa lành cho tâm hồn. Bởi đôi khi, một lời nói nhẹ nhàng, một ánh mắt thấu hiểu của bác sĩ có sức mạnh hơn cả ngàn viên thuốc. Và Thủy Linh, với bản chất chan hòa, sẽ là kiểu bác sĩ mà bệnh nhân tin tưởng và yêu mến. 💖
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dream-values animate-on-scroll" style="margin-top:2rem;">
+                    <div class="dream-value">
+                        <div class="dream-value-icon">🧠</div>
+                        <div class="dream-value-title">Trí Tuệ</div>
+                        <div class="dream-value-desc">Không ngừng học hỏi, trau dồi kiến thức y khoa để chữa trị cho bệnh nhân</div>
+                    </div>
+                    <div class="dream-value">
+                        <div class="dream-value-icon">💗</div>
+                        <div class="dream-value-title">Nhân Ái</div>
+                        <div class="dream-value-desc">Trái tim luôn đồng cảm, thấu hiểu nỗi đau và mang lại hy vọng cho mọi người</div>
+                    </div>
+                    <div class="dream-value">
+                        <div class="dream-value-icon">💪</div>
+                        <div class="dream-value-title">Kiên Cường</div>
+                        <div class="dream-value-desc">Sẵn sàng vượt qua mọi thử thách trên con đường chinh phục ước mơ cao quý</div>
+                    </div>
+                </div>
+
+                <div class="dream-images animate-on-scroll">
+                    <img src="images/graduation-stairs.jpg" alt="Thủy Linh kiên cường" onclick="openLightbox('images/graduation-stairs.jpg')">
+                    <img src="images/ao-dai-temple.jpg" alt="Thủy Linh duyên dáng" onclick="openLightbox('images/ao-dai-temple.jpg')">
+                    <img src="images/metro-pose4.jpg" alt="Thủy Linh tự tin" onclick="openLightbox('images/metro-pose4.jpg')">
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== WISHES SECTION ===== -->
+        <section class="wishes-section" id="sec-wishes">
+            <div class="wishes-content animate-on-scroll">
+                <div class="wishes-flower">🌹💐🌷</div>
+                <h2 class="wishes-heading">Lời Chúc Ngày 20/10</h2>
+                <div class="wishes-for">✨ Gửi đến Phạm Hoàng Thủy Linh ✨</div>
+                <div class="wishes-text">
+                    <p>
+                        Nhân ngày 20/10, chúc người đẹp luôn xinh đẹp, vui vẻ và hạnh phúc. Mong người đẹp lúc nào cũng rạng rỡ như ánh nắng, gặp nhiều may mắn, công việc và học tập đều thuận lợi, mọi điều mong muốn đều trở thành hiện thực. 🌟
+                    </p>
+                    <p style="margin-top:1.2rem">
+                        Chúc người đẹp luôn được yêu thương, trân trọng và có thật nhiều niềm vui trong cuộc sống. Chúc người đẹp 20/10 thật ý nghĩa và đáng nhớ nhé! 💕
+                    </p>
+                </div>
+                <div class="wishes-signature">— Với tất cả yêu thương và trân trọng 🩷 —</div>
+                <div class="wishes-hearts">💖 💜 🩷 💖 💜 🩷 💖</div>
+            </div>
+        </section>
+
+        <!-- ===== FULL PHOTO GALLERY — All 19 images ===== -->
+        <div class="gallery-section" id="sec-gallery">
+            <div class="section" style="padding-bottom:2rem;">
+                <div class="section-icon">📸</div>
+                <h2 class="section-title">Khoảnh Khắc Đáng Nhớ</h2>
+                <p class="section-subtitle">"Mỗi bức ảnh là một câu chuyện, mỗi khoảnh khắc là một kỷ niệm"</p>
+            </div>
+            <div class="gallery-masonry">
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/ao-dai-temple.jpg')"><img src="images/ao-dai-temple.jpg" alt="Áo dài tại chùa" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/graduation-standing.jpg')"><img src="images/graduation-standing.jpg" alt="Tốt nghiệp" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/night-lights.jpg')"><img src="images/night-lights.jpg" alt="Dạo phố đêm" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/birthday-friends.jpg')"><img src="images/birthday-friends.jpg" alt="Sinh nhật" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/casual-mall.jpg')"><img src="images/casual-mall.jpg" alt="Đi chơi" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/ao-dai-sky.jpg')"><img src="images/ao-dai-sky.jpg" alt="Áo dài trời xanh" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/aquarium.jpg')"><img src="images/aquarium.jpg" alt="Tham quan" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/birthday-family.jpg')"><img src="images/birthday-family.jpg" alt="Gia đình" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/graduation-stairs.jpg')"><img src="images/graduation-stairs.jpg" alt="Tốt nghiệp xinh đẹp" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/cool-hat.jpg')"><img src="images/cool-hat.jpg" alt="Cá tính" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/selfie-cute.jpg')"><img src="images/selfie-cute.jpg" alt="Đáng yêu" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/group-temple.jpg')"><img src="images/group-temple.jpg" alt="Cùng bạn bè" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/baby-traditional.jpg')"><img src="images/baby-traditional.jpg" alt="Thuở nhỏ" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/childhood-award.jpg')"><img src="images/childhood-award.jpg" alt="Thành tích" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/childhood-siblings.jpg')"><img src="images/childhood-siblings.jpg" alt="Cùng anh chị em" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/metro-pose1.jpg')"><img src="images/metro-pose1.jpg" alt="Tại ga metro 1" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/metro-pose2.jpg')"><img src="images/metro-pose2.jpg" alt="Tại ga metro 2" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/metro-pose3.jpg')"><img src="images/metro-pose3.jpg" alt="Tại ga metro 3" loading="lazy"></div>
+                <div class="gallery-photo animate-on-scroll" onclick="openLightbox('images/metro-pose4.jpg')"><img src="images/metro-pose4.jpg" alt="Tại ga metro 4" loading="lazy"></div>
+            </div>
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer">
+            <div class="footer-hearts">💖 🩷 💜 🤍 💜 🩷 💖</div>
+            <p>Được tạo với tất cả tình yêu thương 🌸 Chúc mừng Ngày Phụ Nữ Việt Nam 20/10</p>
+            <p style="margin-top:.5rem;font-size:.8rem;">© 2026 — Tri Ân Những Người Phụ Nữ Tuyệt Vời</p>
+        </footer>
+    </div>
+
+    <!-- ===== CHARACTER ICON (bottom-left) - Thủy Linh ===== -->
+    <div class="character-icon" id="charIcon" onclick="navigateToChapter('chapter-thuylinh','Phạm Hoàng Thủy Linh')">
+        <img src="images/ao-dai-sky.jpg" alt="Thủy Linh icon">
+        <span class="icon-name">Thủy Linh 🌸</span>
+    </div>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆️</button>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        // ===== HEART TRANSITION FOR CHAPTER NAVIGATION =====
+        function navigateToChapter(chapterId, chapterName) {
+            const overlay = document.getElementById('heartOverlay');
+            const nameEl = document.getElementById('heartName');
+
+            nameEl.textContent = chapterName;
+
+            // Reset animations by removing and re-adding class
+            overlay.classList.remove('active');
+            // Force reflow
+            void overlay.offsetWidth;
+            overlay.classList.add('active');
+
+            // After animation ends (~2.2s), hide overlay and scroll to chapter
+            setTimeout(() => {
+                overlay.classList.remove('active');
+                const target = document.getElementById(chapterId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 2300);
+        }
+
+        // ===== READ MORE TOGGLE =====
+        function toggleReadMore(btn) {
+            const content = btn.nextElementSibling;
+            content.classList.toggle('expanded');
+            btn.classList.toggle('active');
+            btn.innerHTML = content.classList.contains('expanded')
+                ? 'Thu gọn <span class="arrow">▼</span>'
+                : 'Xem thêm <span class="arrow">▼</span>';
+        }
+
+        // ===== LIGHTBOX =====
+        function openLightbox(src) {
+            const lb = document.getElementById('lightbox');
+            document.getElementById('lightbox-img').src = src;
+            lb.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+        // ===== SCROLL ANIMATIONS =====
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // ===== BACK TO TOP =====
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTop');
+            btn.classList.toggle('show', window.scrollY > 500);
+        });
+
+        // ===== ACTIVE NAV LINK =====
+        const sections = document.querySelectorAll('[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                if (scrollY >= section.offsetTop - 200) current = section.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href && href === '#' + current) link.classList.add('active');
+            });
+        });
+
+        // ===== SPARKLE ON CLICK =====
+        document.addEventListener('click', (e) => {
+            const sparkles = ['✨','💖','🌸','⭐','💕','🩷'];
+            for (let i = 0; i < 3; i++) {
+                const sparkle = document.createElement('span');
+                sparkle.className = 'sparkle';
+                sparkle.textContent = sparkles[Math.floor(Math.random() * sparkles.length)];
+                sparkle.style.left = (e.clientX + (Math.random() - 0.5) * 40) + 'px';
+                sparkle.style.top = (e.clientY + (Math.random() - 0.5) * 40) + 'px';
+                document.body.appendChild(sparkle);
+                setTimeout(() => sparkle.remove(), 1000);
+            }
+        });
+
+        // ===== CONSOLE EASTER EGG =====
+        console.log('%c🌸 Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10! 🌸', 'color:#e84393;font-size:20px;font-weight:bold;');
+    </script>
+</body>
+</html>
